@@ -1,10 +1,38 @@
-.botao1{background-color: #ffde50;}
-.firstrow{background-color: #ffde50;}
-.imagem2{width: 350px;}
-.final{background-color: #ffde45;}
-.imagemback{background-color: #FCF190;}
-.texto {color: #253D94;}
-.background-image {
-    background-image: url("C:\Users\drili\OneDrive\Área de Trabalho\Projeto Fintech\Projeto_Fintech_Front\Projeto Fintech\Assests\imagens_legends\686646_campeonatos_3.jpg") no-repeat center center;
-    background-size: cover;
+@media (max-width: 766px) {
+    /* Classe que define o texto p/ centralizar a partir de uma tela de largura de 766px */
+    .custom-center {
+        text-align: center;
+    }
+    /* Classe que define o a imagem p/ centralizar a partir de uma tela largura de 766px */
+    .custom-img-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
+
+/* Definindo tamanho dos botões */
+.w-140 {
+    width: 140px !important;
+}
+
+.h-140 {
+    height: 140px !important;
+}
+
+/* Definindo cores dos Botões */
+.btn-yellow {
+    background-color: yellow;
+    color: black; /* Cor do texto */
+}
+
+.btn-red {
+    background-color: red;
+    color: white; /* Cor do texto */
+}
+
+.btn-blue {
+    background-color: blue;
+    color: white; /* Cor do texto */
+}
+
