@@ -43,13 +43,14 @@ h1 {
 
 
 
+
 /* Definindo tamanho dos botões */
 .w-140 {
-    width: 120px !important;
+    width: 140px !important;
 }
 
 .h-140 {
-    height: 120px !important;
+    height: 140px !important;
 }
 
 /* Definindo cores dos Botões */
