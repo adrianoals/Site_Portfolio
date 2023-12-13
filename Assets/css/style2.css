@@ -1,0 +1,198 @@
+body {
+    background: linear-gradient(to top right, #F3F3F3, #F3F3F3) no-repeat center;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 50px 50px;
+    /* text-align: center; */
+}
+
+h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.font_subtitle {
+    font-family: 'Kanit', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.font_text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+
+@media (max-width: 766px) {
+    /* Classe que define o texto p/ centralizar a partir de uma tela de largura de 766px */
+    .custom-center {
+        text-align: center;
+    }
+    /* Classe que define o a imagem p/ centralizar a partir de uma tela largura de 766px */
+    .custom-img-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 766px) {
+    .button-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Definindo tamanho dos botões */
+.w-140 {
+    width: 140px !important;
+}
+
+.h-140 {
+    height: 140px !important;
+}
+.w-30 {
+    width: 30px !important;
+}
+
+.h-30 {
+    height: 30px !important;
+}
+
+/* Definindo cores dos Botões */
+.btn-yellow {
+    background-color: #EEA302;
+    color: black; /* Cor do texto */
+}
+
+.btn-red {
+    background-color: #FF3B25 !important;
+    color: white; /* Cor do texto */
+}
+
+.btn-blue {
+    background-color: #80D8DA;
+    color: white; /* Cor do texto */
+}
+
+/* Mudando a cor ao clicar no índice */
+.nav-link:active {
+    color: #FF0000; /* Substitua por qualquer cor que você quiser */
+}
+
+/* Card */
+
+.card {
+  position: relative;
+  background-color: #F3F3F3 !important;;
+  /* background: #fff; Cor de fundo original */
+  border-radius: 20px;
+  padding: 20px 60px;
+  box-shadow: 0 0 10px black;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; */
+  /* max-width: 300px; */
+  /* max-height: 296px; */
+  /* max-height: 300px; Defina uma altura máxima desejada */
+  overflow: hidden; /* Evita que o conteúdo ultrapasse a altura máxima */
+}
+
+.card .image {
+  width: 150px;
+  height: 150px;
+  padding: 3px;
+  border: 3px solid black;
+  background: #fff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+  .card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .card h3 {
+    text-align: center;
+  }
+  
+  .card p {
+    /* color: orange; */
+    text-align: center;
+  }
+
+
+/* Swiper */
+.swiper-container1 {
+    background-color:#F3F3F3;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .swiper-container2 {
+    background-color: #80D8DA;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .swiper-container3 {
+    background-color: #EEA302;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .swiper {
+    margin: 0 auto;
+    cursor: grab;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+  .swiper-button-next:hover {
+    transform: scale(1.2) translateX(80%);
+  }
+  .swiper-button-prev:hover {
+    transform: scale(1.2) translateX(-80%);
+  }
+  .swiper-button-next {
+    transform: translateX(100%);
+  }
+  .swiper-button-prev {
+    transform: translateX(-100%);
+  }
+  .swiper-pagination {
+    transform: translateY(200%);
+  }
+  .swiper-pagination-bullet {
+    background: #F3F3F3;
+    width: 15px;
+    height: 15px;
+  }
