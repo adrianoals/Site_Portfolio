@@ -1,25 +1,20 @@
-var swiper = new Swiper('.mySwiper', {
-    slidesPerView: 3,
-    spaceBetween: 10,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,    
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-    },
-  });
+window.onload = function() {
+    var containerHeight = document.querySelector('.col-md-4').offsetHeight;
+    var image = document.querySelector('.col-md-4 img');
+    image.style.height = containerHeight + 'px';
+};
+
+
+window.onload = function() {
+    function updateImageHeight() {
+        var containerHeight = document.querySelector('.col-md-4').offsetHeight;
+        var image = document.querySelector('.col-md-4 img');
+        image.style.height = containerHeight + 'px';
+    }
+
+    // Atualiza a altura da imagem quando a página é carregada
+    updateImageHeight();
+
+    // Atualiza a altura da imagem quando a janela do navegador é redimensionada
+    window.onresize = updateImageHeight;
+};
