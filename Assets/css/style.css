@@ -58,6 +58,11 @@ h1 {
     width: 100px !important; 
 }
 
+.wh-100 {
+    height: 120px !important;
+    width: 120px !important; 
+}
+
 /* Definindo cores dos Botões */
 .btn-yellow {
     background-color: #EEA302;
