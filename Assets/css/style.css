@@ -52,6 +52,12 @@ h1 {
     height: 140px !important;
 }
 
+
+.wh-40 {
+    height: 50px !important;
+    width: 100px !important; 
+}
+
 /* Definindo cores dos Botões */
 .btn-yellow {
     background-color: #EEA302;
@@ -68,9 +74,28 @@ h1 {
     color: white; /* Cor do texto */
 }
 
+.btn-yellow:hover, .btn-red:hover, .btn-blue:hover {
+    border: 2px solid black; /* Define a espessura e a cor da borda */
+    /* color: black; Cor do texto */
+}
+
+.btn-yellow:hover {
+    background-color: #EEA302; /* Mesma cor de fundo que o .btn-yellow normal */
+}
+
+.btn-red:hover {
+    background-color: #FF3B25; /* Mesma cor de fundo que o .btn-red normal */
+}
+
+.btn-blue:hover {
+    background-color: #80D8DA; /* Mesma cor de fundo que o .btn-blue normal */
+}
+
+
+
 /* Mudando a cor ao clicar no índice */
 .nav-link:active {
-    color: #FF0000; /* Substitua por qualquer cor que você quiser */
+    color:#80D8DA; /* Substitua por qualquer cor que você quiser */
 }
 
 
@@ -98,6 +123,22 @@ h1 {
 }
 
 
+
+
+/* Estilo padrão para os links */
+.nav-link {
+    color: #000;
+}
+
+/* Estilo ao passar o mouse */
+/* .nav-link:hover {
+    color:#3535cd 
+} */
+
+/* Estilo ao clicar */
+/* .nav-link:active {
+    color: #0000ff; 
+}  */
 
 
 
